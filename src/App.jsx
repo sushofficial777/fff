@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import ProtectedRoute from "ProtectedRoute";
+// import ProtectedRoute from "ProtectedRoute";
 
 
 import AdminLayout from "layouts/admin";
@@ -11,11 +11,11 @@ import Employees from "layouts/employees";
 const App = () => {
   return (
     <Routes>
-      <Route path="auth/*" element={<ProtectedRoute Component={AuthLayout} />} />
-      <Route path="admin/*" element={<ProtectedRoute Component={AdminLayout} />} />
-      <Route path="tl/*" element={<ProtectedRoute Component={TeamLead} />} />
-      <Route path="manager/*" element={<ProtectedRoute Component={Manager} />} />
-      <Route path="user/*" element={<ProtectedRoute Component={Employees} />} />
+      <Route path="auth/*" element={<AuthLayout/>} />
+      <Route path="admin/*" element={<AdminLayout />} />
+      <Route path="tl/*" element={<TeamLead />} />
+      <Route path="manager/*" element={<Manager />} />
+      <Route path="user/*" element={<Employees/>} />
       <Route path="/" element={<Navigate to="/auth" replace />} />
     </Routes>
   );

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState,} from "react";
 // import InputField from "components/fields/InputField";
 // import Checkbox from "components/checkbox";
 import { Link, useNavigate } from "react-router-dom";
@@ -12,9 +12,7 @@ export default function SignIn() {
   const [password, setPassword] = useState("");
   // console.log(password);
 
-  useEffect(() => {
-  
-  }, []);
+ 
   const adminLogin = async (e) => {
     e.preventDefault();
     const res = await fetch("/admin/signin", {

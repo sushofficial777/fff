@@ -1,4 +1,4 @@
-import React, { useEffect,useCallback } from "react";
+import React, { useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 
 
@@ -7,9 +7,9 @@ const ProtectedRoute = (props) => {
   const navigate = useNavigate();
   const { Component } = props;
 
-  const authFunction = useCallback(async () =>{
+  const authFunction = async () =>{
   await  fetch("/admin/authentication").then((res) => {
-    
+    console.log(res.status);
       if (res.status === 201) {
         
         navigate("/auth/sign-in", { replace: true });
@@ -24,12 +24,11 @@ const ProtectedRoute = (props) => {
       
       }
     });
-  }, []);
+  };
   
   useEffect(() => {
-    // window.location.reload();
     authFunction();
-  },[]);
+  });
   return (
     <>
       <Component />

@@ -28,7 +28,7 @@ const ProtectedRoute = (props) => {
   
   useEffect(() => {
     authFunction();
-  });
+  },[]);
   return (
     <>
       <Component />

@@ -1,0 +1,115 @@
+.create-user-form{
+    display: flex;
+    margin-top: 14px;
+    border-radius: 5px;
+}
+.user-image-wrapper{
+    width: 30%;
+    /* background-color: brown; */
+}
+.user-image-wrapper .user-image{
+    /* background-color: aqua; */
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 50px;
+  
+}
+.user-image img{
+   
+}
+.create-form-wrapper{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* flex-direction: column; */
+    /* background-color: brown; */
+    /* width: 100%;
+    height:60%; */
+    gap: 2rem;
+    /* background-color: aquamarine; */
+    width: 70%;
+    padding: 1rem;
+}
+.create-user-wrapper{
+    /* background-color: rgb(61, 103, 134); */
+    position: relative;
+    width: 78%;
+    left: 16rem;
+    top: 1rem;
+    height: 80vh;
+
+}
+.create-user-wrapper h2{
+    display: flex;
+    padding: .45rem ;
+    background-color: var(--color-white) ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -5px rgb(163, 163, 163);
+    
+    justify-content: flex-start;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(121, 121, 121);
+    padding-left: 1rem;
+    
+}
+
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+    gap: .2rem;
+    /* background-color: blueviolet; */
+}
+.field .input{
+    width: 100%;
+    padding: .9rem .5rem;
+    
+    
+}
+.field input:focus{
+    outline: none;
+}
+.input input{
+    width: 100%;
+    padding: .8rem .4rem;
+    border-bottom: 1px solid black ;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(180, 180, 180) ;
+   background-color: transparent;
+    transition: 100ms ease;
+    
+    
+    
+}
+.input-selector{
+
+}
+.input label{
+    font-family: 'Nunito', sans-serif;
+    
+}
+.input input:hover{
+   
+}
+.field .input button{
+  
+    width: 97.4%;
+    padding: .7rem 0;
+    
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}

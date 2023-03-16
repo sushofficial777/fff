@@ -13,7 +13,7 @@ export default function SignIn() {
   // console.log(password);
 
   const fetchData = async () => {
-    await fetch("https://virtuelegalservices.com/api/list")
+    await fetch("/api/list")
       .then((res) => {
         // console.log(res);
         return res.json();

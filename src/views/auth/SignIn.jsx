@@ -13,7 +13,7 @@ export default function SignIn() {
   // console.log(password);
 
   const fetchData = async () => {
-    await fetch("/api/list")
+    await fetch("https://virtuelegalservices.com/api/list")
       .then((res) => {
         // console.log(res);
         return res.json();
@@ -28,7 +28,7 @@ export default function SignIn() {
   })
   const adminLogin = async (e) => {
     e.preventDefault();
-    const res = await fetch("/admin/signin", {
+    const res = await fetch("http://fliotravelapi.vnaya.com/admin/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

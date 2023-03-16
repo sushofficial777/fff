@@ -2,7 +2,7 @@
   "name": "Flio_Travel_Admin_Panel",
   "version": "1.0.0",
   "private": true,
-  "proxy": "https://virtuelegalservices.com",
+  "proxy": "http://fliotravelapi.vnaya.com/",
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^36.0.1",
     "@ckeditor/ckeditor5-react": "^5.1.0",

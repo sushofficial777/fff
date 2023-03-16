@@ -1,4 +1,4 @@
-import { useState,} from "react";
+import { useState,useEffect} from "react";
 // import InputField from "components/fields/InputField";
 // import Checkbox from "components/checkbox";
 import { Link, useNavigate } from "react-router-dom";
@@ -12,7 +12,20 @@ export default function SignIn() {
   const [password, setPassword] = useState("");
   // console.log(password);
 
+  const fetchData = async () => {
+    await fetch("https://virtuelegalservices.com/api/list")
+      .then((res) => {
+        // console.log(res);
+        return res.json();
+      })
+      .then((data) => {
+       console.log(data);
+      });
+  };
  
+  useEffect(() =>{
+    fetchData();
+  })
   const adminLogin = async (e) => {
     e.preventDefault();
     const res = await fetch("/admin/signin", {
